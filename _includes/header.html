@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+ <html lang="en"> 
+<head>
+    <title>{% if page.title %}{{ page.title }}{% else %}Rons Notes{% endif %}</title>  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{% if page.description %}{{page.description | xml_escape}}{% else %}{{page.excerpt | strip_html}}{% endif %} ">
+    <link rel="canonical" href="http://rdyar.github.io/{{ page.url | replace:'index.html',''}}" />
+    <!-- <link rel="shortcut icon" href="{{site.baseurl}}/assets/images/favicon.ico"> -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/site.css">   
+</head>
+<body class="site">
+    <header class="site-header">
+    <nav>
+    <div class="sticky-nav">
+    <div class="container-nav">
+       <div class="nav-container">
+         <div class="navbar-brand"></div>
+         <div class="navbar-nav nav-mobile">
+            <a class="nav-item nav-link btn btn-nav" href="{{site.baseurl}}/">Home</a>
+            <a class="nav-item nav-link btn btn-nav" href="{{site.baseurl}}/elements/">Posts</a>
+             <a class="nav-item nav-link btn btn-nav" href="{{site.baseurl}}/about-me/">About</a>
+         </div>
+         <div class="navbar-nav nav-main">
+            <a class="nav-item nav-link{% if page.active %} active{% endif %}" href="{{site.baseurl}}/">Home</a>
+            <a class="nav-item nav-link{% if page.url == '/posts/' %} active{% endif %}" href="{{site.baseurl}}/posts/">Posts</a>
+            <a class="nav-item nav-link{% if page.url == '/about-me/' %} active{% endif %}" href="{{site.baseurl}}/about-me/">About Me</a>
+        </div>
+      </div>  
+      </div>
+      </div>
+</nav>
+</header>
