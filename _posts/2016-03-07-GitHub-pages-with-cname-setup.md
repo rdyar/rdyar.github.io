@@ -51,7 +51,7 @@ Now it all works and it is pretty cool!
 
 ## Video Showing How to Push to gh-pages Branch
 
-I made a video showing the first part above - pushing existing web site to a new repos' gh-pages branch.
+I made a video showing the first part above - pushing existing website to a new repos' gh-pages branch.
 
  <div class="responsive-video margin-bottom-30">
                                  <iframe width="940" height="480" src="https://www.youtube.com/embed/iyFjdmzcpws" frameborder="0" allowfullscreen></iframe>
