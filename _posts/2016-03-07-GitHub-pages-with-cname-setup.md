@@ -48,3 +48,11 @@ In order to do a sub domain you just add a file named CNAME to your repo. There 
 Then you need to add the CNAME in your DNS (this is outside of GH). We use AWS for pretty much everything, including their DNS service Route 53. In Route 53 it is easy to add a CNAME record, you just click 'Create Record Set' and type in a name which is the sub domain you want - for me this was 'status'. Then you choose the Type from the dropdown - CNAME. Then you type in the Value... to me this seems obvious that it would be the url of the live repo site http://rdyar.github.io/plp-status. But after an hour it wasn't working. So then I tried it without the 'http://' part, still no luck. I had seen in the GH docs a reference to using just your username.github.io so eventually I tried 'rdyar.github.io' and it worked. I had assumed this was for hosting your username repo via the Master branch, but apparently that is what you put for any CNAME as well.
 
 Now it all works and it is pretty cool!
+
+## Video Showing How to Push to gh-pages Branch
+
+I made a video showing the first part above - pushing existing web site to a new repos' gh-pages branch.
+
+ <div class="responsive-video margin-bottom-30">
+                                 <iframe width="940" height="480" src="//www.youtube.com/embed/https://youtu.be/iyFjdmzcpws?modestbranding=1;autohide=1&amp;showinfo=0&amp;rel=0" frameborder="0" allowfullscreen></iframe>
+                            </div>
