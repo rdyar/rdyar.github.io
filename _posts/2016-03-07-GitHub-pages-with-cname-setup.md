@@ -54,5 +54,5 @@ Now it all works and it is pretty cool!
 I made a video showing the first part above - pushing existing web site to a new repos' gh-pages branch.
 
  <div class="responsive-video margin-bottom-30">
-                                 <iframe width="940" height="480" src="https://youtu.be/iyFjdmzcpws?modestbranding=1;autohide=1&amp;showinfo=0&amp;rel=0" frameborder="0" allowfullscreen></iframe>
+                                 <iframe width="940" height="480" src="https://www.youtube.com/embed/iyFjdmzcpws?modestbranding=1;autohide=1&amp;showinfo=0&amp;rel=0" frameborder="0" allowfullscreen></iframe>
                             </div>
