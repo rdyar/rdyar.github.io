@@ -1,6 +1,6 @@
 ---
 title: rdyar.github.io
-description: Random notes about things I am interested in.
+description: A fortuitous concatenation of pixels
 active: yes
 ---
 {% for post in site.posts | limit:2 %}

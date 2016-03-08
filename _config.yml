@@ -22,3 +22,10 @@ defaults:
       #type: "notes"
     values:
       layout: "default"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+       is_post: true
+      

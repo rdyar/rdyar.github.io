@@ -11,7 +11,7 @@ The site I have hosted like this is a status monitor website which tells you if 
 
 I've been playing with GH Pages for a while, and for the most part don't have trouble with existing projects, but when starting a new one I have been having trouble. The trouble usually has to do with having an existing project folder locally (no version control yet) and wanting to push it up to a new GH repo. Apparently that is not how you do it.
 
-**This is for project pages - not your one username repo**
+**This is for project pages - not your one username repo.**
 
 This is how I think I am going to do this in the future.
 

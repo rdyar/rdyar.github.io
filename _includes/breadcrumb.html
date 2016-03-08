@@ -1,6 +1,7 @@
 <section class="section-breadcrumb">
 <div class="container">
   <h1>{{ page.title | upcase }}</h1>
-  <p class="lead-crumb">{{page.description}}</p>
+  {% if page.is_post %} <p class="small">Posted on {{ page.date | date: '%B %d, %Y' }}</p>{% endif %}
+  <p class="small">{{page.description}}</p>
         </div>
 </section>
