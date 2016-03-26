@@ -4,7 +4,7 @@ I've been using browser-sync with Gulp for auto re-loading the browser whenever 
 
 When I was researching how to do this I found a few different ways to do the Gulpfile, some of which were really long and obtuse. I started using one that seemed simple, and over time have been able to understand more of it and have simplified it a bit.
 
- {% highlight css linenos %}
+ {% highlight javascript linenos %}
 var gulp        = require('gulp');
 var browserSync = require('browser-sync');
 var cp          = require('child_process');
