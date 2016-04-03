@@ -2,7 +2,7 @@
 title: About Me
 ---
 
-My name is Ron, I own and run a photo lab in San Diego called [ProLabPrints.com (aka Fromex Photo)](http://prolabprints.com). I have worked in the photo industry since <del>the dawn of time</del> 1987 or so when I was shooting too much film in high school and needed a way to cut costs - what better than to work in a lab? Along the way the industry has changed and become very technical which seems to suit me.
+My name is Ron, I own and run a photo lab in San Diego called [ProLabPrints.com (aka Fromex Photo)](https://prolabprints.com). I have worked in the photo industry since <del>the dawn of time</del> 1987 or so when I was shooting too much film in high school and needed a way to cut costs - what better than to work in a lab? Along the way the industry has changed and become very technical which seems to suit me.
 
 While I am currently fully employed, I am always looking for new ventures, and am very open in sharing my experience and helping others.
 
