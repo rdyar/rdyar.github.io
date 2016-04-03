@@ -1,7 +1,7 @@
 ---
 ---
 
-Yesterday I setup my first GH pages project website as a sub domain for my business -  [ProLabPrints Photo Lab](http://prolabprints.com). Usually I host on Amazon S3, but for this project I wanted to try out GH pages. This post goes over a few things that threw me off.
+Yesterday I setup my first GH pages project website as a sub domain for my business -  [ProLabPrints Photo Lab](https://prolabprints.com). Usually I host on Amazon S3, but for this project I wanted to try out GH pages. This post goes over a few things that threw me off.
 
 **_This post is mostly for hosting a jekyll site as a sub domain on a GitHub project repo using the gh-pages branch._**
 
