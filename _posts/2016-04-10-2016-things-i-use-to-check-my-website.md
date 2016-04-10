@@ -2,7 +2,7 @@
 ---
 These are the websites I use to check my work when developing a new website or new page.
 
-https://developers.google.com/speed/pagespeed/insights/  
+(https://developers.google.com/speed/pagespeed/insights/)  
 Googles page speed insights. I don't like that it always complains about eliminating render blocking css, 
 even though my css file is tiny. It doesn't seem to take file size into account at all.
 
