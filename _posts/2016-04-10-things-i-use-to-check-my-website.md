@@ -9,6 +9,9 @@ even though my css file is tiny. It doesn't seem to take file size into account 
 [http://tools.pingdom.com/fpt/](http://tools.pingdom.com/fpt/)  
 Pingdoms speed test - love this for checking how large the total download is and the score.
 
+[http://www.webpagetest.org/](http://www.webpagetest.org/)  
+Another speed test, like the filmstrip/video review.
+
 [https://validator.w3.org/nu/](https://validator.w3.org/nu/)  
 Checks for valid code, sometimes I have an extra closing div or a missing alt tag, this checks for that. I probably should be doing this
 in my build process but have not figured that out yet (htmlproofer?). 
