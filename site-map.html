@@ -7,4 +7,5 @@ exclude: true
 ---
 <ul class="sitemap">{% for page in site.pages %}{% if page.exclude != true %}
 	<li><a href="{{site.baseurl}}{{ page.url }}">{{ page.title }}</a></li>{% endif %}{%endfor%}
+	{% for post in site.posts %}<li><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>{%endfor%}
 </ul>
