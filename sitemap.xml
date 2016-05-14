@@ -7,6 +7,9 @@ layout: null
     {% for page in site.pages %}{% if page.exclude != true %}<url>
     <loc>http://rdyar.github.io/strapless{{ page.url }}</loc>
     <priority>0.8</priority>
-  </url>
-  {% endif %}{% endfor %}
+  </url>{% endif %}{% endfor %}
+   {% for post in site.posts %}<url>
+    <loc>http://rdyar.github.io/strapless{{ post.url }}</loc>
+    <priority>0.8</priority>
+  </url>{% endfor %}
 </urlset>
