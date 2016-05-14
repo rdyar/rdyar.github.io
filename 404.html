@@ -11,5 +11,7 @@ exclude: true
   <ul class="sitemap">
        {% for page in site.pages %}{% if page.exclude != true %}<li style="margin-bottom:20px;"><a href="{{site.baseurl}}{{ page.url }}">{{ page.title }}</a> <br />{{ page.description }}<br /></li>
        {% endif %}{%endfor%}
+          {% for post in site.posts %}<li style="margin-bottom:20px;"><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a> <br />{{ post.description }}<br /></li>
+       {% endif %}{%endfor%}
    </ul>
  </div>
