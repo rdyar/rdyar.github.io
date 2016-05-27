@@ -24,12 +24,3 @@ When working with the command line, I either open the command window by holding 
 `git push origin gh-pages` - pushes your changes up to the version control server (GitHub normally but could be BitBucket or your own private Git server).
 
 `git push origin master` pushes to master branch.
-
-
-<object width="480" height="330"><param name="movie" 
-value="http://www.youtube.com/v/gtqoNMmDni4?version=3&amp;hl=pt_BR&amp;rel=0">   
-</param><param name="allowFullScreen" value="true"></param>
-<param name="allowscriptaccess" value="always"></param>
-<embed src="http://www.youtube.com/v/gtqoNMmDni4?version=3&amp;hl=pt_BR&amp;rel=0" 
-type="application/x-shockwave-flash" width="480" height="330" allowscriptaccess="always" allowfullscreen="true" /></object>
-
