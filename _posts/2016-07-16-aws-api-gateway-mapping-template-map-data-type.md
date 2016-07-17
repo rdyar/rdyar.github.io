@@ -35,3 +35,30 @@ Here is a screen shot of an item - this is basically one row of a table and repr
     "taxable": $shipitem.M.taxable.BOOL}#if($foreach.hasNext),#end #end]   
 } #end #end
 {% endhighlight %}
+
+And this is what it returns from the gateway:
+
+{% highlight linenos %}
+{
+   "lab_id":"rontest",
+   "require_userid": true,
+   "sales_tax": 0.08,
+   "allowed_file_types": "jpg,jpeg,tif,psd",
+    "global_checkout_options": ,
+    "shipping": [    {"shippingmethod": "Lab Pickup",
+    "id": "SJSdI0wD",
+    "description": "Pickup at our lab in San Diego",
+    "shiptype": "pickup",
+    "pos_code": "labpickup",
+    "tieruses": "ordertotal",
+    "price":{"300":0.22, "10":0.4, "1":0.65, "100":0.27 },
+    "taxable": false},     {"shippingmethod": "Lab Pickup2",
+    "id": "SJzxSdI0wD",
+    "description": "test",
+    "shiptype": "pickup",
+    "pos_code": "labpickupt",
+    "tieruses": "ordertotal",
+    "price":{"0":1, "7":0 },
+    "taxable": false} ]   
+}
+{% endhighlight %}
