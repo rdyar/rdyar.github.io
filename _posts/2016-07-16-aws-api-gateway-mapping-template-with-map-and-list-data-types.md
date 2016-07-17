@@ -8,7 +8,7 @@ As part of our application we allow quantity discounts on a product (this is a p
 
 Getting both the quantity and the price was a little hard as I couldn't find any examples that were like this.
 
-The trick seems to be the KeySet - without it I could only get the Number part of the Map.
+The trick seems to be the keySet() - without it I could only get the Number part of the Map.
 
 Here is a screen shot of an item - this is basically one row of a table and represents shipping and option prices. The part the code below deals with is just getting the prices for the shipping - which like an 8x10 can be qty based - with the order total being the qty, price being the shipping price. This is not real data, I was just using this to work on to get the formatting.
 
