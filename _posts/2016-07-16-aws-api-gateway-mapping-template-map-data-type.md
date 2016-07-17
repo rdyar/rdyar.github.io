@@ -13,3 +13,25 @@ The trick seems to be the KeySet - without it I could only get the Number part o
 Here is a screen shot of an item - this is basically one row of a table and represents shipping and option prices. The part the code below deals with is just getting the prices for the shipping - which like an 8x10 can be qty based - with the order total being the qty, price being the shipping price. This is not real data, I was just using this to work on to get the formatting.
 
 ![DynamoDB screenshot of an item with Map data type](/assets/images/dynamodb-api-mapping-template-map-type.png)
+
+ {% highlight javascript linenos %}
+ #set($inputRoot = $input.path('$'))
+#if($inputRoot.Count == '0' ) {"error":"no records"} #{else} 
+#foreach($elem in $inputRoot.Items) 
+{
+   "lab_id":"$elem.lab_id.S",
+   "require_userid": $elem.require_userid.BOOL,
+   "sales_tax": $elem.sales_tax.N,
+   "allowed_file_types": "$elem.allowed_file_types.S",
+    "global_checkout_options": $elem.global_checkout_options.S,
+    "shipping": [#foreach($shipitem in $elem.shipping.L)
+    {"shippingmethod": "$shipitem.M.shippingmethod.S",
+    "id": "$shipitem.M.id.S",
+    "description": "$shipitem.M.description.S",
+    "shiptype": "$shipitem.M.shiptype.S",
+    "pos_code": "$shipitem.M.pos_code.S",
+    "tieruses": "$shipitem.M.tieruses.S",
+    "price":{#foreach($sprice in $shipitem.M.price.M.keySet())"$sprice":$shipitem.M.price.M.get($sprice).N#if($foreach.hasNext),#end #end},
+    "taxable": $shipitem.M.taxable.BOOL}#if($foreach.hasNext),#end #end]   
+} #end #end
+ {% highlight %}
