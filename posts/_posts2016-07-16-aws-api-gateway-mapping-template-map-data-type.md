@@ -12,4 +12,4 @@ The trick seems to be the KeySet - without it I could only get the Number part o
 
 Here is a screen shot of an item - this is basically one row of a table and represents shipping and option prices. The part the code below deals with is just getting the prices for the shipping - which like an 8x10 can be qty based - with the order total being the qty, price being the shipping price. This is not real data, I was just using this to work on to get the formatting.
 
-![DynamoDB screenshot of an item with Map data type]()
+![DynamoDB screenshot of an item with Map data type](/assets/images/dynamodb-api-mapping-template-map-type.png)
