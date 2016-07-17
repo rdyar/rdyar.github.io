@@ -14,8 +14,8 @@ Here is a screen shot of an item - this is basically one row of a table and repr
 
 ![DynamoDB screenshot of an item with Map data type](/assets/images/dynamodb-api-mapping-template-map-type.png)
 
- {% highlight javascript linenos %}
-   #set($inputRoot = $input.path('$'))
+{% highlight javascript linenos %}
+#set($inputRoot = $input.path('$'))
 #if($inputRoot.Count == '0' ) {"error":"no records"} #{else} 
 #foreach($elem in $inputRoot.Items) 
 {
@@ -34,4 +34,4 @@ Here is a screen shot of an item - this is basically one row of a table and repr
     "price":{#foreach($sprice in $shipitem.M.price.M.keySet())"$sprice":$shipitem.M.price.M.get($sprice).N#if($foreach.hasNext),#end #end},
     "taxable": $shipitem.M.taxable.BOOL}#if($foreach.hasNext),#end #end]   
 } #end #end
- {% highlight %}
+{% highlight %}
