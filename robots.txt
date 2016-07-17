@@ -15,4 +15,4 @@ Disallow: /
 User-agent: Mediapartners-Google
 Disallow: /
 
-Sitemap: http://rdyar.github.io/strapless/sitemap.xml
+Sitemap: http://rdyar.github.io/sitemap.xml
