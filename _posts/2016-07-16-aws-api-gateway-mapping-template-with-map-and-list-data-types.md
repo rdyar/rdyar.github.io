@@ -36,7 +36,7 @@ Here is a screen shot of an item - this is basically one row of a table and repr
 } #end #end
 {% endhighlight %}
 
-And this is what it returns from the gateway:
+And this is what it returns from the gateway (yeah, I know, the global_checkout_options is not valid json as it should be null or something other than blank):
 
 {% highlight javascript linenos %}
 {
