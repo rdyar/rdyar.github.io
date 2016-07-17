@@ -38,7 +38,7 @@ Here is a screen shot of an item - this is basically one row of a table and repr
 
 And this is what it returns from the gateway:
 
-{% highlight linenos %}
+{% highlight javascript linenos %}
 {
    "lab_id":"rontest",
    "require_userid": true,
