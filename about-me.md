@@ -18,6 +18,7 @@ Some of my experiences:
 - I have created several windows desktop programs that solve small specific problems in my industry. Usually these are things that I outsource to Elance (or whatever it is called now).
 - Founder of [ePhotoPros.com](http://ephotopros.com) (~2007). This was supposed to be a subscription based online community for photographers. It never quite took off, but our videos have had well over 1 million views in total (youtube plus website hosted). Most of the videos were made by an employee (Jeff St John) who did an awesome job. I still occasionally make videos for it, and use the ePhotoPros youtube channel for a variety of stuff.
 - Owner/President/Janitor/Web Designer at Fromex Photo Lab, Inc (aka [ProLabPrints.com](http://prolabprints.com)) since 1998.
+- My latest project: [https://simpleordersystem.com](https://simpleordersystem.com) a web based ordering system for labs and printers using node and react js.
 
-I have some decent skills in the following: Noritsu/Fuji photo lab equipment, large format inkjet printers, color management, ROES, LabWorks POS, Fiery CWS, Adobe Photoshop, Sublime Text, HTML, CSS, Markdown, AWS (S3, EC2, Route 53) and pick up new skills fairly well.
+I have some decent skills in the following: Noritsu/Fuji photo lab equipment, large format inkjet printers, color management, ROES, LabWorks POS, Fiery CWS, Adobe Photoshop, Sublime Text, HTML, CSS, Markdown, AWS (S3, EC2, Route 53, Dynamo, API Gateway, SES) and pick up new skills fairly well.
 
