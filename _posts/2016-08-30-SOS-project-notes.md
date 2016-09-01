@@ -10,4 +10,8 @@ Command prompt - not PowerShell to see a list of Environment Variables: type `se
 Powershell: set an environment variable: `$env:API_URL = "http://localhost:3100/api"`
 To read it back: `echo $env:API_URL`
 
+## Ubuntu Command Line Stuff
+
+When it is showing updates available: `sudo apt-get update && sudo apt-get upgrade`
+
 
