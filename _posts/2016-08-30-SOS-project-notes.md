@@ -12,6 +12,7 @@ To read it back: `echo $env:API_URL`
 
 ## Ubuntu Command Line Stuff
 
-When it is showing updates available: `sudo apt-get update && sudo apt-get upgrade`
+Updates available - install them: `sudo apt-get update && sudo apt-get upgrade`  
+Check disk information - to see free space etc: df -h  
 
 
