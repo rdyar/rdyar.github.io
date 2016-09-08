@@ -15,4 +15,17 @@ To read it back: `echo $env:API_URL`
 Updates available - install them: `sudo apt-get update && sudo apt-get upgrade`  
 Check disk information - to see free space etc: df -h  
 
+### Ubuntu and Vi
+
+Save and quit - :wq - make sure insert is off - press escape  
+Just quit - :q  
+paste - right click  
+
+To remove a block of text:
+
+- Put your cursor on the top line of the block of text/code to remove.
+- Press V (That's capital "V" : Shift + v )
+- Move your cursor down to the bottom of the block of text/code to remove.
+- Press d.
+
 
