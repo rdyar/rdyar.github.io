@@ -2,7 +2,7 @@
 ---
 I am using API Gateway to provide a simple (or so I thought) API using AWS DynamoDB for a photo ordering web app. Some of the data is nested in List data type, and others in a Map data type.
 
-After a lot of trial and error I came up with the following mapping template for the Inegration Response.
+After a lot of trial and error I came up with the following mapping template for the Integration Response.
 
 As part of our application we allow quantity discounts on a product (this is a photo ordering app so a product would be an 8x10 from an image uploaded). We express pricing on the back end as a string of numbers in the form of qty,price,qty,price. This is then transformed into an object when we put into Dynamo like this: "qty":price,"qty":price - this is then stored in Dynamo as a Map data type.
 
@@ -52,7 +52,7 @@ And this is what it returns from the gateway (yeah, I know, the global_checkout_
     "pos_code": "labpickup",
     "tieruses": "ordertotal",
     "price":{"300":0.22, "10":0.4, "1":0.65, "100":0.27 },
-    "taxable": false},     {"shippingmethod": "Lab Pickup2",
+    "taxable": false}, {"shippingmethod": "Lab Pickup2",
     "id": "SJzxSdI0wD",
     "description": "test",
     "shiptype": "pickup",
