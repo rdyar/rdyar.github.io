@@ -1,4 +1,4 @@
-I'm currently playing around with [https://gitlab.com](https://gitlab.com) anb their CI for deploying a jekyll website.
+I'm currently playing around with [https://gitlab.com](https://gitlab.com) and their CI for deploying a jekyll website.
 
 My current workflow publishes my sites to S3/Cloudfront after running them thru a Rake task that minifies the js/css/html files. I also have octopress-autoprefixer installed and that allows jekyll to autoprefix the css as it builds the site.
 
@@ -6,7 +6,7 @@ I'm pretty happy with all 3 of these things in my current setup, but that means 
 
 I think I will be able to do this with Gitlabs CI, but I have not found any examples that do all 3 things:
 
-- Auto-prefix the css
+- Auto-prefix the css (working)
 - Minify all the files
 - Deploy to S3
 
