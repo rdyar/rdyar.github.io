@@ -43,4 +43,4 @@ pages:
     - public
   only:
   - master
-{% end highlight %}
+ {% endhighlight %}
