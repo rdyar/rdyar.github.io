@@ -12,7 +12,7 @@ I think I will be able to do this with Gitlabs CI, but I have not found any exam
 
 So far I think I have the auto-prefix part solved, but it was not easy. Simply adding the octopress gem didn't work, there was an error about there not being a js runner, which is where the rubyracer gem comes in. Once I added that it was having an error: `jekyll 3.2.1 | Error:  "\xE6" on US-ASCII`. That seemed to do with the locale not being set to utf-8, so I found a post with a way to set that, added it in and now it is working with this gitlab.ci.yml file:
 
-```
+~~~
   image: ruby:2.3
   test:
    stage: test
@@ -43,4 +43,4 @@ So far I think I have the auto-prefix part solved, but it was not easy. Simply a
     - public
   only:
   - master
-  ```
+~~~
