@@ -28,4 +28,7 @@ To remove a block of text:
 - Move your cursor down to the bottom of the block of text/code to remove.
 - Press d.
 
+## Javascript Debugging
+
+`window.alert((JSON.stringify(fileNames)) + ',' + dupeCheck + ',' + i);`
 
