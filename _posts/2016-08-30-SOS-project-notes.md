@@ -14,6 +14,8 @@ To read it back: `echo $env:API_URL`
 
 Updates available - install them: `sudo apt-get update && sudo apt-get upgrade`  
 Check disk information - to see free space etc: df -h  
+human readable ls with last modified date: ls -halt  
+show current date and time: date "+%H:%M:%S   %d/%m/%y"
 
 ### Ubuntu and Vi
 
