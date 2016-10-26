@@ -30,6 +30,9 @@ To remove a block of text:
 - Move your cursor down to the bottom of the block of text/code to remove.
 - Press d.
 
+### PM2
+logs are in home/.pm2 
+
 ## Javascript Debugging
 
 `window.alert((JSON.stringify(fileNames)) + ',' + dupeCheck + ',' + i);`
