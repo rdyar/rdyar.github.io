@@ -53,3 +53,25 @@ pages:
   only:
   - master
  {% endhighlight %}
+
+<a id="create-ssh"></a>
+# Create SSH [top](#top)
+
+This is how to do it on OSX.  Likely, you should be in the ~/.ssh directory. If you do it in another directory, you can just move them to the ~/.ssh directory later:
+
+```
+ssh-keygen
+```
+It will prompt you to enter a file name.  This will be the name of the keypair.  It will also prompt to enter a 'passphrase'.  This is a password on the ssh key itself.  Unless you really need to, you can leave it blank.  If you enter one and forget it, you'll have to start all over.
+
+It will make some squiggles on the screen that look like this:
+![sha squiggles]({{ site.url }}{{site.baseurl}}/assets/images/sha-squiggles.png)
+
+To copy this key to the pastebin, you can use this little trick (assuming you named the key `first`):
+```
+cat ~/.ssh/first.pub | pbcopy
+```
+Afterwards, you can insert it where you want it by using CMD-v.
+
+<a id="github"></a>
+# Add to Github [top](#top)
