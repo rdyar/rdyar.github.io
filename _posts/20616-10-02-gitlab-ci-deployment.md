@@ -55,6 +55,7 @@ pages:
  {% endhighlight %}
 
 <a id="create-ssh"></a>
+
 # Create SSH [top](#top)
 
 This is how to do it on OSX.  Likely, you should be in the ~/.ssh directory. If you do it in another directory, you can just move them to the ~/.ssh directory later:
@@ -74,4 +75,5 @@ cat ~/.ssh/first.pub | pbcopy
 Afterwards, you can insert it where you want it by using CMD-v.
 
 <a id="github"></a>
+
 # Add to Github [top](#top)
