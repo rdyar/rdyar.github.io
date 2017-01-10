@@ -6,6 +6,8 @@ Used portable-jekyll.
 
 When I first tried to run jekyll server, it didn't know it had jekyll install, so I ran `gem install jekyll` which installed it.
 
+I added in the correct Environment Variables - ruby/bin, devkit/bin, curl/bin. Also made a new one for SSL (portable-jekyll has notes about it). Rebooted each time as they don't seem to get picked up until windows restarts.
+
 Then it was complaining about `jekyll-watch` and `rouge` so I installed both of them too.
 
 Eventually it started to work, but was super slow - maybe 60 seconds before it did anything.
