@@ -17,6 +17,9 @@ Check disk information - to see free space etc: df -h
 human readable ls with last modified date: ls -halt  
 show current date and time: date "+%H:%M:%S   %d/%m/%y"
 
+top - shows list of processes
+shift + m sort top by mem usage
+
 ### Ubuntu and Vi
 
 Save and quit - :wq - make sure insert is off - press escape  
