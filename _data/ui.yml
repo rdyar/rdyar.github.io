@@ -1,6 +1,0 @@
-color:
-    header:
-        class: 
-            - blue                        
-            - bg-white                  
-            - b--gold
