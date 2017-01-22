@@ -22,4 +22,4 @@ Some of my experiences:
 
 I have some decent skills in the following: Noritsu/Fuji photo lab equipment, large format inkjet printers, color management, ROES, LabWorks POS, Fiery CWS, Adobe Photoshop, Sublime Text, HTML, CSS, Markdown, AWS (S3, EC2, Route 53, Dynamo, API Gateway, SES) and pick up new skills fairly well.
 
-{% if page.header.class %}{{ page.header.class | join: ' ' | prepend: ' ' }}{% else %}{{ site.data.ui.color.header.class | join: ' ' | prepend: ' ' }}{% endif %}
+{% if page.header.class %}{{ page.header.class | join: ' ' }}{% else %}{{ site.data.ui.color.header.class | join: ' ' | prepend: ' ' }}{% endif %}
