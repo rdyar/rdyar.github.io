@@ -12,7 +12,9 @@ To read it back: `echo $env:API_URL`
 
 ## Ubuntu Command Line Stuff
 
-Updates available - install them: `sudo apt-get update && sudo apt-get upgrade`  
+Updates available - install them: `sudo apt-get update && sudo apt-get upgrade` 
+the upgrade note called a message of the day, may not go away until the next day or reboot.
+
 Check disk information - to see free space etc: df -h  
 human readable ls with last modified date: ls -halt  
 show current date and time: date "+%H:%M:%S   %d/%m/%y"
