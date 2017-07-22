@@ -22,9 +22,11 @@ show current date and time: date "+%H:%M:%S   %d/%m/%y"
 top - shows list of processes
 shift + m sort top by mem usage
 
-show list of all processes sorted by RSS memory usage:
+show list of all processes sorted by RSS memory usage:  
 ps aux --sort -rss 
 
+kill process id and hopefully restart it:  
+sudo kill -HUP <pid>
 
 
 ### Ubuntu and Vi
