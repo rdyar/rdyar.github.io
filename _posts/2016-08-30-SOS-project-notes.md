@@ -22,6 +22,11 @@ show current date and time: date "+%H:%M:%S   %d/%m/%y"
 top - shows list of processes
 shift + m sort top by mem usage
 
+show list of all processes sorted by RSS memory usage:
+ps aux --sort -rss 
+
+
+
 ### Ubuntu and Vi
 
 Save and quit - :wq - make sure insert is off - press escape  
