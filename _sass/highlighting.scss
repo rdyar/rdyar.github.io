@@ -20,11 +20,11 @@ code {color: #333;
     padding:2px 8px;}
 .code {color: #333;
     background: #f8f8f8;}
-pre {
+pre {padding: 20px;
   overflow: auto;
  position: relative;
  background: #f8f8f8; }
-.highlight  { background: #f8f8f8; }
+.highlight  { background: #f1f1f1; }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .highlight .k { font-weight: bold } /* Keyword */
