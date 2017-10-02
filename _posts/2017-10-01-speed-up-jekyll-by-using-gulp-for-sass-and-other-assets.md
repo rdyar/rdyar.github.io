@@ -185,9 +185,8 @@ Here is the package.json file - this loads all the dependencies needed in the Gu
 
 ```
 
-In the jekyll config file you have to exclude the assets folder from being processed and keep the assets folder from being deleted from the site folder:
+In the jekyll config file you have to keep the assets folder from being deleted from the site folder ( I am using `_assets` as the source folder and folders with an underscore are ignored by jekyll by default - not sure this is the best name for it though, might end up using something else):
 
 ```yaml
-exclude: ["assets","package.json","rakefile.rb","README.md","s3_website.yml","node_modules","gulpfile.js"]
 keep_files: [assets]   
 ```
