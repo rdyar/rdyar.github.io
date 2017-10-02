@@ -163,7 +163,7 @@ gulp.src("_site/**/*.html")
 
 Here is the package.json file:
 
-```
+```json
 {
   "devDependencies": {
     "autoprefixer": "^7.1.4",
@@ -186,7 +186,7 @@ Here is the package.json file:
 
 In the jekyll config file you have to exclude the assets folder from being processed and keep the assets folder from being deleted from the site folder:
 
-```
+```yaml
 exclude: ["assets","package.json","rakefile.rb","README.md","s3_website.yml","node_modules","gulpfile.js"]
 keep_files: [assets]   
 ```
