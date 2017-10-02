@@ -7,19 +7,19 @@ But it is hard to go back to a slower workflow so I decided to see if I could ma
 
 One of the things about hugo is that it doesn't currently have a sass processor, so if you want to use sass you have to use something like gulp to process the sass. I had a bit of an ah-ha moment and decided to see if I could move all of my asset stuff into a gulp task and see if that made a difference with how fast the site generates, and most importantly how fast it live reloads.
 
-WOW! move sass into a gulp workflow, and tell jekyll to ignore where the final css file ends up and you can edit css and save it, and the change is reloaded instantly more or less - so jekyll is not regenerating, gulp is processing the sass into a css file and putting it in the site folder - all blazingly fast, with source maps. I am happy with my current css so it won't do much for me right now, but when I was coming up with my sites' css I has constantly waiting for changes and now it will be almost instant, and I can edit in dev tools and save directly to whichever partial is needed. I had never used sourcemaps before, so this is pretty neat to me.
+WOW! move sass into a gulp workflow, and tell jekyll to ignore where the final css file ends up and you can edit css and save it, and the change is reloaded instantly more or less - so jekyll is not regenerating, gulp is processing the sass into a css file and putting it in the site folder - all blazingly fast, with source maps. I am happy with my current css so it won't do much for me right now, but when I was coming up with my sites' css I was constantly waiting for changes and now it will be almost instant, and I can edit in Chrome's dev tools and save directly to whichever partial is needed. I had never used sourcemaps before, so this is pretty neat to me.
 
 The other cool thing about using gulp for sass processing is that now Jekyll doesn't have to do it - and that makes it quicker. With Jekyll 3.5.2's speed improvement - before my gulp sass workflow -  my build time went down from around 15 seconds to about 6. Now with gulp doing the sass I was down to about 2.5 seconds.
 
-Why stop with just sass? one of the things about Hugo was that it really made me think about what Jekyll needed to do vs what it didn't need to do. If there is no front matter, why have jekyll constantly nuking the site folder and redoing everything? Everything that was in my `assets` folder was just static files that could be moved on there own, no need to have jekyll wipe out all the content just to move over a js file or an image.
+Why stop with just sass? one of the things about Hugo was that it really made me think about what Jekyll needed to do vs what it didn't need to do. If there is no front matter, why have jekyll constantly nuking the site folder and redoing everything? Everything that was in my `assets` folder was just static files that could be moved on their own, no need to have jekyll wipe out all the content just to move over a js file or an image.
 
 So in addition to gulp doing its sass thing, I also have it monitor the assets/js folder and move it - and uglify it as well. I don't use much js so this part could be improved with source maps also, but I don't have any use for that so I just have gulp minify it and move it to the `site/assets/js` folder.
 
 I do the same for images, basically just moving them. I have a separate task to minify them, I run that on the source folder from time to time, no need to do it all the time. I am pretty decent at PS so my image files are usually pretty small to begin with.
 
-So now for all my assets - sass, js and images, I have gulp watch them and when needed move them to the corresponding site/assets folder, and then it triggers BrowserSync to reload the browser as well. If there is a file with front matter, then jekyll rebuilds, and nukes everything in the site folder except the assets folder and everything in it.
+So now for all my assets - sass, js and images, I have gulp watch them and when needed move them to the corresponding site/assets folder, and then it triggers BrowserSync to reload the browser as well. If there is a file with front matter, then jekyll rebuilds, and nukes everything in the site folder except the assets folder.
 
-Now with all my static assets handled by gulp, my build time is just over half of a second. that is down from 6 seconds before using gulp for asset processing, and down from about 15 seconds before 3.5.2. And any sass changes - or js - or images - show up almost instantly.
+Now with all my static assets handled by gulp, my build time is just over half of a second. That is down from 6 seconds before using gulp for asset processing, and down from about 15 seconds before 3.5.2. And any sass changes - or js - or images - show up almost instantly.
 
 One small problem with this workflow is that if I delete a file out of the source assets folder, it is not delete from the site/assets folder.  I don't think that is a big deal, I will delete site/assets once in a while and it should be fine. If there is an extra image or three in there that is not used I don't think it will matter.
 
@@ -161,7 +161,7 @@ gulp.src("_site/**/*.html")
 
 ```
 
-Here is the package.json file:
+Here is the package.json file - this loads all the dependencies needed in the Gulp tasks, you need to run 'npm install' in the root of your project to install them. They will end up in a `node_modules` folder, and this may take a while, there will be a lot of files. 
 
 ```json
 {
