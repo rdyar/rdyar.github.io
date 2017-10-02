@@ -3,11 +3,11 @@
 
 I spent the last couple weeks learning/using Hugo for some reason. Hugo is really really fast at generating a site, but in the end I decided to keep using Jekyll, mostly cause I understand it better, and my sites are not that big that it is a problem.
 
-But it is hard to go back to a slower workflow so I decided to see if i could make some changes to how I use Jekyll.
+But it is hard to go back to a slower workflow so I decided to see if I could make some changes to how I use Jekyll.
 
-One of the things about hugo is that it doesn't currently have a sass processor, so if you want to use sass you have to use something like gulp to process the sass. I had a bit of an ah-ha moment and decided to see if I could move all of my assets stuff into a gulp task and see if that made a difference with how fast the site generates, and most importantly how fast it live reloads.
+One of the things about hugo is that it doesn't currently have a sass processor, so if you want to use sass you have to use something like gulp to process the sass. I had a bit of an ah-ha moment and decided to see if I could move all of my asset stuff into a gulp task and see if that made a difference with how fast the site generates, and most importantly how fast it live reloads.
 
-wow - move sass into a gulp workflow, and tell jekyll to ignore where the final css files ends up and you can edit css and save it and the change is reloaded instantly more or less - so jekyll is not regenerating, gulp is processing the sass into a css file and putting it in the site folder - all blazingly fast, with source maps. I am happy with my current css so it won't do much for me right now, but when I was coming up with my sites' css I has constantly waiting for changes and now it will be almost instant, and I can edit in dev tools and save directly to whichever partial is needed. I had never used sourcemaps before, so this is pretty neat to me.
+WOW! move sass into a gulp workflow, and tell jekyll to ignore where the final css files ends up and you can edit css and save it and the change is reloaded instantly more or less - so jekyll is not regenerating, gulp is processing the sass into a css file and putting it in the site folder - all blazingly fast, with source maps. I am happy with my current css so it won't do much for me right now, but when I was coming up with my sites' css I has constantly waiting for changes and now it will be almost instant, and I can edit in dev tools and save directly to whichever partial is needed. I had never used sourcemaps before, so this is pretty neat to me.
 
 The other cool thing about using gulp for sass processing is that now Jekyll doesn't have to do it - and that makes it quicker. With Jekyll 3.5.2's speed improvement - before my gulp sass workflow -  my build time went down from around 15 seconds to about 6. Now with gulp doing the sass I was down to about 2.5 seconds.
 
