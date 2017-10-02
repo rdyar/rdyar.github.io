@@ -27,7 +27,7 @@ This is still new to me, it seems to work really well but there could still be i
 
 Here is the Gulp file:
 
-```
+```js
 var gulp        = require('gulp');
 var browserSync = require('browser-sync');
 var cp          = require('child_process');
