@@ -21,7 +21,7 @@ So now for all my assets - sass, js and images, I have gulp watch them and when 
 
 Now with all my static assets handled by gulp, my build time is just over half of a second. That is down from 6 seconds before using gulp for asset processing, and down from about 15 seconds before 3.5.2. And any sass changes - or js - or images - show up almost instantly.
 
-One small problem with this workflow is that if I delete a file out of the source assets folder, it is not delete from the site/assets folder.  I don't think that is a big deal, I will delete site/assets once in a while and it should be fine. If there is an extra image or three in there that is not used I don't think it will matter.
+One small problem with this workflow is that if I delete a file out of the source assets folder, it is not deleted from the site/assets folder.  I don't think that is a big deal, I will delete site/assets once in a while and it should be fine. If there is an extra image or three in there that is not used I don't think it will matter.
 
 This is still new to me, it seems to work really well but there could still be issues with it. Feel free to contact me if you find something wrong.
 
