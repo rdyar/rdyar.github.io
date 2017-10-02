@@ -79,22 +79,22 @@ gulp.task('serve', ['jekyll-build'], function() {
  * Watch jekyll source files for changes, don't watch assets
  */
 gulp.task('watch', function () {
-    gulp.watch(['**/*.*', '!_site/**/*','!assets/**/*','!node_modules/**/*','!.sass-cache/**/*' ], ['jekyll-rebuild']);
+    gulp.watch(['**/*.*', '!_site/**/*','!_assets/**/*','!node_modules/**/*','!.sass-cache/**/*' ], ['jekyll-rebuild']);
 });
 
 //watch just the sass files - no need to rebuild jekyll
 gulp.task('watch-sass', ['sass-rebuild'], function() {
-     gulp.watch(['assets/sass/**/*.scss'], ['sass-rebuild']);
+     gulp.watch(['_assets/sass/**/*.scss'], ['sass-rebuild']);
 });
 
 // watch just the js files
 gulp.task('watch-js', ['js-rebuild'], function() {
-     gulp.watch(['assets/js/**/*.js'], ['js-rebuild']);
+     gulp.watch(['_assets/js/**/*.js'], ['js-rebuild']);
 });
 
 // watch just the image files
-gulp.task('watch-images', ['iamges-rebuild'], function() {
-     gulp.watch(['assets/img/**/*.*'], ['images-rebuild']);
+gulp.task('watch-images', ['images-rebuild'], function() {
+     gulp.watch(['_assets/img/**/*.*'], ['images-rebuild']);
 });
 
 //if sass files change just rebuild them with gulp-sass and what not
@@ -103,7 +103,7 @@ gulp.task('sass-rebuild', function() {
         autoprefixer({browsers: ['last 2 version']}),
         cssnano()
     ];
-     return gulp.src('assets/sass/**/*.scss')
+     return gulp.src('_assets/sass/**/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(sourcemaps.init())
@@ -116,7 +116,7 @@ gulp.task('sass-rebuild', function() {
 });
 
 gulp.task('js-rebuild', function(cb) {
-    return gulp.src('assets/js/**/*.js')
+    return gulp.src('_assets/js/**/*.js')
       .pipe(uglify())
       .pipe( gulp.dest('_site/assets/js/') )
       .pipe(browserSync.reload({
@@ -126,7 +126,7 @@ gulp.task('js-rebuild', function(cb) {
 
 gulp.task('images-rebuild', function(cb) {
    
-     return gulp.src('assets/img/**/*.*')
+     return gulp.src('_assets/img/**/*.*')
       .pipe( gulp.dest('_site/assets/img/') )
       .pipe(browserSync.reload({
       stream: true
@@ -137,13 +137,13 @@ gulp.task('images-rebuild', function(cb) {
  * Default task, running just `gulp` will 
  * compile the jekyll site, launch BrowserSync & watch files.
  */
-gulp.task('default', ['serve', 'watch','watch-sass','watch-js','images-rebuild']);
+gulp.task('default', ['serve', 'watch','watch-sass','watch-js','watch-images']);
 
 
 //build and deploy stuff
 gulp.task('imagemin', function() {
     console.log('Minimizing images in source!!');
- return gulp.src('assets/img/**/*')
+ return gulp.src('_assets/img/**/*')
     .pipe(imagemin())
     .pipe(gulp.dest(function (file) {
         return file.base;
@@ -158,6 +158,7 @@ gulp.src("_site/**/*.html")
 // validate from the command line instead, works better
 // npm install htmlhint -g
 // htmlhint _site/**/*.html
+
 
 ```
 
