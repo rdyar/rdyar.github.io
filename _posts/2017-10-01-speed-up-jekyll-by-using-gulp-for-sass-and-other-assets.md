@@ -185,7 +185,7 @@ Here is the package.json file - this loads all the dependencies needed in the Gu
 
 ```
 
-In the jekyll config file you have to keep the assets folder from being deleted from the site folder ( I am using `_assets` as the source folder and folders with an underscore are ignored by jekyll by default - not sure this is the best name for it though, might end up using something else):
+In the jekyll config file you have to keep the assets folder from being deleted from the site folder. I am using `_assets` as the source folder and folders with an underscore are ignored by jekyll by default - not sure this is the best name for it though, might end up using something else:
 
 ```yaml
 keep_files: [assets]   
