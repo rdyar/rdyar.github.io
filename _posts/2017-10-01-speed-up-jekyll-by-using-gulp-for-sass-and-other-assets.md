@@ -25,8 +25,8 @@ One small problem with this workflow is that if I delete a file out of the sourc
 
 This is still new to me, it seems to work really well but there could still be issues with it. Feel free to contact me if you find something wrong.
 
-Here is the Gulp file:
-**Please note - this is for Windows - if you use a Mac line 58 should probably be just jekyll not jekyll.bat**
+Here is the Gulp file:  
+**Please note - this is for Windows - if you use a Mac/Linux line 58 should probably be just jekyll not jekyll.bat**
 
 ```js
 var gulp        = require('gulp');
@@ -51,7 +51,7 @@ var messages = {
 // but it will not remove them from _site/assets if you remove them from assets.
 
 /**
- * Build the Jekyll Site
+ * Build the Jekyll Site - for windos. If you are on a Mac/linux change jekyll.bat to just jekyll
  */
 gulp.task('jekyll-build', function (done) {
     browserSync.notify(messages.jekyllBuild);
