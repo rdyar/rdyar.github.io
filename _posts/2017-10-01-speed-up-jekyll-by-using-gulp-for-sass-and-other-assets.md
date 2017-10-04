@@ -26,7 +26,7 @@ One small problem with this workflow is that if I delete a file out of the sourc
 This is still new to me, it seems to work really well but there could still be issues with it. Feel free to contact me if you find something wrong.
 
 Here is the Gulp file:  
-**Please note - this is for Windows - if you use a Mac/Linux line 58 should probably be just jekyll not jekyll.bat**
+**Please note - this is for Windows - if you use Mac/Linux line 58 should probably be just jekyll not jekyll.bat**
 
 ```js
 var gulp        = require('gulp');
