@@ -25,7 +25,7 @@ var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
 
-/** * Build the Jekyll Site */
+/** * Build the Jekyll Site (windows) if you use Mac/Linux change jekyll.bat to just jekyll */
 gulp.task('jekyll-build', function (done) {
     browserSync.notify(messages.jekyllBuild);
     return cp.spawn('jekyll.bat', ['build'], {stdio: 'inherit'})
