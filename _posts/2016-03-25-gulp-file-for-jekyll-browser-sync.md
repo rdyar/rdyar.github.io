@@ -1,6 +1,6 @@
 ---
 ---
-**I have an updated Gulp file that I use now, it processes all asstes including SASS which speeda up the Jekyll build time quite a bit**  
+**I have an updated Gulp file that I use now, it processes all asstes including SASS which speeds up the Jekyll build time quite a bit**  
 [Speed up Jekyll use Gulp](/2017/10/01/speed-up-jekyll-by-using-gulp-for-sass-and-other-assets/)  
 
 I've been using browser-sync with Gulp for auto re-loading the browser whenever I save a file. It is pretty cool!
