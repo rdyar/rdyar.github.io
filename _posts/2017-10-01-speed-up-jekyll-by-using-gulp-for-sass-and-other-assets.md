@@ -3,7 +3,7 @@
 
 {% include video.html youtube="z0zk6qJdTkU" %}
 
-
+<br><br>
 I spent the last couple weeks learning/using Hugo for some reason. Hugo is really really fast at generating a site, but in the end I decided to keep using Jekyll, mostly cause I understand it better, and my sites are not that big that it is a problem.
 
 But it is hard to go back to a slower workflow so I decided to see if I could make some changes to how I use Jekyll.
