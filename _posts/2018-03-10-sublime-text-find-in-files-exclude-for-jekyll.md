@@ -1,4 +1,4 @@
-When you use `Find in Files` with Sublime text and you are using Gulp you probably have a zillion files in the `node_modules` directory which will probably pollute your search results.
+When you use `Find in Files` with Sublime Text and you are using Gulp you probably have a zillion files in the `node_modules` directory which will probably pollute your search results.
 
 You can exclude stuff on the `Where` line by using a `-`.
 
