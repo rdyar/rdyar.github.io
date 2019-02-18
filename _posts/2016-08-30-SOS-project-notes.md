@@ -1,7 +1,7 @@
 ---
 ---
 
-Just some random notes from a project - the Simple Ordering System.
+Just some random notes from a project.
 
 ## Windows Command Line Stuff
 
